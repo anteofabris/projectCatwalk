@@ -63,7 +63,7 @@ class ProductInfoHead extends React.Component {
             })
             }
           </span>
-          <h3>{this.props.name}</h3>
+          <h3 className="af_prodName">{this.props.name}</h3>
           <h5>{this.props.slogan}</h5>
           <em id="af-strikethrough">${this.props.price}</em> On sale!
           <em> ${this.props.salePrice}</em> <br />
@@ -105,7 +105,7 @@ class ProductInfoHead extends React.Component {
       if (this.props.salePrice) {
 
         return (<div>
-          <h3>{this.props.name}</h3>
+          <h3 className="af_prodName">{this.props.name}</h3>
           <h5>{this.props.slogan}</h5>
           <em id="af-strikethrough">${this.props.price}</em> On Sale!
           <em> ${this.props.salePrice}</em> <br />
@@ -113,7 +113,7 @@ class ProductInfoHead extends React.Component {
         </div>)
       } else {
         return (<div>
-          <h3>{this.props.name}</h3>
+          <h3 className="af_prodName">{this.props.name}</h3>
           <h5>{this.props.slogan}</h5>
           <em>${this.props.price}</em> <br />
           {this.props.styleName}
